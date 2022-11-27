@@ -46,7 +46,44 @@ namespace CapaDatos
                 comando.Parameters.AddWithValue("@TELEFONO", telefono);
                 comando.ExecuteNonQuery();
                 comando.Parameters.Clear();
+                conexion.CerrarConexion();
             } catch (Exception ex) { throw ex; }
+        }
+
+        public void Update(int idSucursal, string codigo, string n1, string n2, string fechaC, string genero, string correo, int idPais, string ciudad, string direccion, string telefono, int id)
+        {
+            try
+            {
+                comando.Connection = conexion.AbrirConexion();
+                comando.CommandText = "__EmpleadoUpdate";
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@SUCURSALID", idSucursal);
+                comando.Parameters.AddWithValue("@CODIGOEMPLEADO", codigo);
+                comando.Parameters.AddWithValue("@PRIMERNOMBRE", n1);
+                comando.Parameters.AddWithValue("@SEGUNDONOMBRE", n2);
+                comando.Parameters.AddWithValue("@FECHANACIMIENTO", fechaC);
+                comando.Parameters.AddWithValue("@GENERO", genero);
+                comando.Parameters.AddWithValue("@EMAIL", correo);
+                comando.Parameters.AddWithValue("@PAISID", idPais);
+                comando.Parameters.AddWithValue("@CIUDAD", ciudad);
+                comando.Parameters.AddWithValue("@DIRECCION", direccion);
+                comando.Parameters.AddWithValue("@TELEFONO", telefono);
+                comando.Parameters.AddWithValue("@ID", id);
+                comando.ExecuteNonQuery();
+                comando.Parameters.Clear();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex) { throw ex; }
+        }
+
+        public void Delete(int id) {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "__EmpleadoDelete";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@ID", id);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conexion.CerrarConexion();
         }
     }
 }

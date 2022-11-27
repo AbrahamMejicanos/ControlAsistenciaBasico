@@ -34,6 +34,23 @@ namespace CapaNegocio
             } catch (Exception ex) { throw ex; }
         }
 
+        public void Delete(string id) {
+            try {
+                objetoCDE.Delete(Convert.ToInt32(id));
+            } catch (Exception ex) { throw ex; }
+        }
+
+        public void Update(string idSucursal, string n1, string n2, string fechaC, string genero, string correo, string idPais, string ciudad, string direccion, string telefono, string id)
+        {
+            try
+            {
+                string codigo = CodigoCliente(n1, n2);
+                string correcionPais = Pais(idPais);
+                objetoCDE.Update(Convert.ToInt32(idSucursal), codigo, n1, n2, fechaC, genero, correo, Convert.ToInt32(correcionPais), ciudad, direccion, telefono, Convert.ToInt32(id));
+            }
+            catch (Exception ex) { throw ex; }
+        }
+
         private static string CodigoCliente(string n1, string n2) {
             string codigo = "";
             foreach(char i in n1) {
