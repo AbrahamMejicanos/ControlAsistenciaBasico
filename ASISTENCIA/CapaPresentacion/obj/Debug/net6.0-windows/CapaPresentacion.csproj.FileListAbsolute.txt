@@ -26,3 +26,8 @@ C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\n
 C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.pdb
 C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.genruntimeconfig.cache
 C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\ref\CapaPresentacion.dll
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.CRUD_Sucursal.resources
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.CRUD_Empleado.resources
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\bin\Debug\net6.0-windows\RestSharp.dll
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\bin\Debug\net6.0-windows\Stripe.net.dll

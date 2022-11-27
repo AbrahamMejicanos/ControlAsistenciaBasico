@@ -41,6 +41,8 @@ namespace CapaPresentacion
                 MostrarTurnos();
                 editar = false;
             }
+            idTurno = null;
+            editar = false;
         }
 
         private void Limpiar() {
@@ -71,6 +73,7 @@ namespace CapaPresentacion
                 idTurno = dataGridView1.CurrentRow.Cells["ID"].Value.ToString();
                 objetoCN.EliminarTurno(idTurno);
                 MessageBox.Show("Se ha eliminado con exito");
+                MostrarTurnos();
             }
             else {
                 MessageBox.Show("Seleccione fila para eliminar");

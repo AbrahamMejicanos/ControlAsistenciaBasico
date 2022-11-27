@@ -7,9 +7,9 @@ namespace CapaDatos
     {
         private CD_Conexion conexion = new CD_Conexion();
 
-        SqlDataReader leer;
-        DataTable tabla = new DataTable();
-        SqlCommand comando = new SqlCommand();
+        private SqlDataReader leer;
+        private DataTable tabla = new DataTable();
+        private SqlCommand comando = new SqlCommand();
 
         public DataTable Mostrar() {
             try {
@@ -21,6 +21,21 @@ namespace CapaDatos
                 conexion.CerrarConexion();
                 return tabla;
             } catch (Exception ex) { throw ex; }
+        }
+
+        public DataTable MostrarCbo()
+        {
+            try
+            {
+                comando.Connection = conexion.AbrirConexion();
+                comando.CommandText = "__TurnosCbo";
+                comando.CommandType = CommandType.StoredProcedure;
+                leer = comando.ExecuteReader();
+                tabla.Load(leer);
+                conexion.CerrarConexion();
+                return tabla;
+            }
+            catch (Exception ex) { throw ex; }
         }
 
         public void Insertar(string nombre, string HEntrada, string HSalida) {
