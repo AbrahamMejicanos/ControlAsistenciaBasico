@@ -49,7 +49,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnVer = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -256,16 +255,6 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnVer
-            // 
-            this.btnVer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnVer.Location = new System.Drawing.Point(816, 488);
-            this.btnVer.Name = "btnVer";
-            this.btnVer.Size = new System.Drawing.Size(187, 39);
-            this.btnVer.TabIndex = 19;
-            this.btnVer.Text = "Ver";
-            this.btnVer.UseVisualStyleBackColor = true;
-            // 
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -315,7 +304,6 @@
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnVer);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtTelefono);
@@ -369,7 +357,6 @@
         private Label label8;
         private TextBox txtTelefono;
         private Button btnGuardar;
-        private Button btnVer;
         private Button btnEditar;
         private Button btnEliminar;
         private Label label9;

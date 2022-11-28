@@ -31,3 +31,6 @@ C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\n
 C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.pdb
 C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.genruntimeconfig.cache
 C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\ref\CapaPresentacion.dll
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Marcar.resources
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Ver.resources
+C:\Users\50253\Desktop\SistemaAsistencia\ASISTENCIA\CapaPresentacion\obj\Debug\net6.0-windows\CapaPresentacion.Principal.resources
